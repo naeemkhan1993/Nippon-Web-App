@@ -1,0 +1,421 @@
+.loadingAnimation {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .header {
+    font-weight: bold;
+    color: #fff;
+    align-items: center;
+    background-color: #283542;
+  }
+  
+  .navbar {
+    background-color: #283542;
+    color: #fff;
+  }
+  
+  /*----- Rootpage Page----- */
+  
+  .sideContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #283542;
+  }
+  
+  .sidebarItem {
+    transition: 0.3s;
+    border-right: 0px solid #fff;
+  }
+  
+  .rightContainer {
+    overflow: auto;
+    height: 100%;
+  }
+  
+  .sidebarItem:hover {
+    background: linear-gradient(
+      90deg,
+      rgba(0, 0, 0, 0.2) 0%,
+      rgba(0, 0, 0, 0) 100%
+    );
+  }
+  
+  .text {
+    transition: 0.3s;
+  }
+  
+  .sidebarItem:hover .text {
+    transition: 0.3s;
+    margin-left: 15px;
+  }
+  
+  /*----- Dashboard Page----- */
+  
+  .userInfoBody {
+    background-color: #fff;
+    align-items: center;
+    padding: 50px 0;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px -2px 8px 0px;
+  }
+  
+  .dashboardHeader {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #3b4d61;
+  }
+  
+  .dashboardBody {
+    background-color: #fff;
+    position: relative;
+    overflow: hidden;
+    padding: 30px;
+  }
+  
+  .dashboardItemBox {
+    /* flex: 1; */
+    justify-content: space-between;
+    margin: 20px;
+    width: 220px;
+    height: 120px;
+    background-color: #fff;
+    z-index: 1;
+    overflow: hidden;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: rgba(99, 99, 99, 0.3) 0px 2px 8px 0px;
+    position: relative;
+    transition: 0.3s;
+    cursor: pointer;
+    color: #3b4d61;
+  }
+  
+  .dashboardItemIcon {
+    padding: 8px;
+    background-color: #fff;
+    border-radius: 4px;
+    color: #283542;
+  }
+  
+  .dashboardItemIcon:hover {
+    background-color: #ddd;
+  }
+  
+  .dashboardItemBox p {
+    z-index: 1;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  
+  .dashboardItemBoxHover {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 0%;
+    width: 100%;
+    border-radius: 10px;
+    background-color: rgba(40, 53, 66, 1);
+    transition: 0.3s;
+  }
+  
+  .dashboardItemBox:hover {
+    color: #fff;
+    /* flex: 1.5; */
+  }
+  
+  .dashboardItemBox:hover .dashboardItemBoxHover {
+    height: 100%;
+  }
+  
+  .dashboardAbsolute {
+    background-color: #3b4d6150;
+    height: 1200px;
+    width: 2000px;
+    left: 50%;
+    transform: translate(-50%, -90%);
+    position: absolute;
+    border-radius: 9999px;
+  }
+  
+  /*----- Login Page----- */
+  
+  .loginBody {
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    color: #3b4d61;
+  
+    background: hsla(139, 72%, 83%, 1);
+    background: linear-gradient(
+      180deg,
+      hsla(139, 72%, 83%, 1) 0%,
+      hsla(229, 89%, 62%, 1) 100%
+    );
+  
+    background: -moz-linear-gradient(
+      180deg,
+      hsla(139, 72%, 83%, 1) 0%,
+      hsla(229, 89%, 62%, 1) 100%
+    );
+  
+    background: -webkit-linear-gradient(
+      180deg,
+      hsla(139, 72%, 83%, 1) 0%,
+      hsla(229, 89%, 62%, 1) 100%
+    );
+  }
+  .outerBox {
+    height: 75vh;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: #f2f2f2;
+  }
+  
+  .leftBox {
+    flex: 4;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .RightBox {
+    place-items: center;
+    border-radius: 12px;
+    background-color: #fff;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 0px 5px 0px;
+  }
+  .form {
+    flex: 3;
+    width: 60%;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+  }
+  
+  /*----- Register Page----- */
+  
+  .registerBody {
+    flex: 1;
+    background-color: #fff;
+    position: relative;
+  }
+  
+  .registerInputBody {
+    filter: blur(0px);
+  }
+  
+  .input {
+    width: 300px;
+  }
+  
+  .input span {
+    color: red;
+  }
+  
+  .registerFooter {
+    flex: 3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .loadingBox {
+    top: 40%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+  }
+  
+  /*----- Register Page----- */
+  
+  .userData {
+    padding: 5px 0;
+    cursor: pointer;
+    text-align: center;
+    transition: 0.3s;
+  }
+  
+  .userData p {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding: 0 10px;
+  }
+  
+  .userData:hover {
+    background-color: #28354225;
+  }
+  
+  .userData:hover .userDataAbsolute {
+    right: 0;
+  }
+  
+  /*----- ManageAdmin Page----- */
+  
+  .adminData p {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  
+  /*----- App Settings Page----- */
+  
+  .appSettingsBox {
+    padding: 20px;
+    background-color: #fff;
+  }
+  
+  .typeBox p {
+    z-index: 1;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  
+  /*----- Responsive Page----- */
+  
+  @media only screen and (max-width: 576px) {
+    .loading {
+      width: 150px;
+    }
+  
+    .header {
+      padding: 6px 12px;
+      font-size: 1rem;
+    }
+  
+    .navbar {
+      height: 70px;
+    }
+  
+    .navLogo {
+      width: 200px;
+    }
+  
+    .sideContainer {
+      width: 250px;
+      height: 100%;
+      padding: 12px;
+    }
+    .sidebarItem {
+      padding: 15px 0;
+    }
+  
+    /*----- Login Page----- */
+  
+    .outerBox {
+      width: 95vw;
+      height: 90vh;
+    }
+  
+    .leftBox {
+      display: none;
+    }
+  
+    .form {
+      width: 80%;
+    }
+  }
+  
+  @media only screen and (min-width: 576px) {
+    .navbar {
+      height: 70px;
+    }
+  
+    .header {
+      padding: 6px 12px;
+      font-size: 1rem;
+    }
+  
+    .navLogo {
+      width: 220px;
+    }
+  
+    .sideContainer {
+      width: 250px;
+      height: 100%;
+      padding: 12px;
+    }
+    .sidebarItem {
+      padding: 15px 0;
+    }
+  
+    /*----- Login Page----- */
+  
+    .outerBox {
+      width: 70vw;
+    }
+  
+    .leftBox {
+      display: none;
+    }
+  }
+  
+  @media only screen and (min-width: 1200px) {
+    .navbar {
+      height: 50px;
+    }
+    .loading {
+      width: 250px;
+    }
+  
+    .header {
+      padding: 6px 12px;
+      font-size: 1.2rem;
+    }
+  
+    /*----- Rootpage Page----- */
+  
+    .sideContainer {
+      width: 200px;
+      padding: 12px;
+    }
+    .sidebarItem {
+      padding: 15px 0;
+    }
+  
+    /*----- Login Page----- */
+  
+    .outerBox {
+      width: 65vw;
+    }
+  
+    .leftBox {
+      display: flex;
+    }
+  }
+  
+  @media only screen and (min-width: 1500px) {
+    .navbar {
+      height: 70px;
+    }
+    .navLogo {
+      width: 280px;
+    }
+    .header {
+      padding: 10px 20px;
+      font-size: 1.5rem;
+    }
+  
+    /*----- Rootpage Page----- */
+  
+    .sideContainer {
+      width: 250px;
+      padding: 20px;
+    }
+    .sidebarItem {
+      padding: 20px 0;
+    }
+  
+    /*----- Login Page----- */
+  
+    .outerBox {
+      width: 60vw;
+    }
+  }
